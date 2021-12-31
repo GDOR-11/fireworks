@@ -23,10 +23,13 @@ const gx = 0;
 const gy = 50;
 let fireworks = [];
 
-const dt = 1 / 60;
+let previousFrame = performance.now();
 function render() {
 	let imgdata = ctx.createImageData(screenWidth, screenHeight);
 	let data = imgdata.data;
+	
+	let dt = (previousFrame - performance.now()) / 1000;
+	previousFrame = performance.now();
 
 	if(Math.random() < 0.5) {
 		createFirework();
