@@ -30,6 +30,7 @@ function render() {
 	
 	let dt = (previousFrame - performance.now()) / 1000;
 	previousFrame = performance.now();
+	console.log(dt, previousFrame);
 
 	if(Math.random() < 0.5) {
 		createFirework();
