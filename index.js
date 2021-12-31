@@ -28,7 +28,7 @@ function render() {
 	let imgdata = ctx.createImageData(screenWidth, screenHeight);
 	let data = imgdata.data;
 	
-	let dt = (previousFrame - performance.now()) / 1000;
+	let dt = (performance.now() - previousFrame) / 1000;
 	previousFrame = performance.now();
 	console.log(dt, previousFrame);
 
