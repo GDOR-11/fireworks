@@ -9,10 +9,10 @@ class Spark {
 	render(data, width, height) {
 		let x = Math.round(this.x);
 		let y = Math.round(this.y);
-		if(x < 0 || x > width) {
+		if(x < 0 || x >= width) {
 			return;
 		}
-		if(y < 0 || y > height) {
+		if(y < 0 || y >= height) {
 			return;
 		}
 		let index = 4 * (y * width + x);
