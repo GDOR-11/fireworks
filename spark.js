@@ -30,7 +30,7 @@ class Spark {
 		this.x += this.vx * dt;
 		this.y += this.vy * dt;
 
-		this.color.a -= 2;
+		this.color.a -= 120 * dt;
 	}
 }
 
