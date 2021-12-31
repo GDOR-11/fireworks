@@ -34,7 +34,7 @@ class Firework {
 			for(let i = 0;i < amtSparks;i++) {
 				let angle = Math.random() * 2 * Math.PI;
 				let maxSpeed = Math.random() * (strength - strength / 2) + strength / 2; // rand * (max - min) + min
-				let speed = Math.random() * (maxSpeed - 0) + 0; // rand * (max - min) + min
+				let speed = Math.random() * maxSpeed;
 				let color = {
 					r: this.color.r,
 					g: this.color.g,
