@@ -1,5 +1,5 @@
 import {autoResizeCanvas} from './autoResizeCanvas.js';
-import {Firework} from './fireWork.js';
+import {Firework} from './firework.js';
 
 function createFirework() {
 	let x = Math.random() * screenWidth;
